@@ -28,7 +28,7 @@ const useData= <T>(endpoint:string) => {
       });
 
     return () => controller.abort();
-  }, []);
+  }, [endpoint]);//add endpoint 
   return { data, error, isLoading };
 };
 
