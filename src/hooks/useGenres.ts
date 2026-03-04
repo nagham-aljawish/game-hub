@@ -4,7 +4,7 @@ import genres from "../data/genres";
 export interface Genre {
   id: number;
   name: string;
-  background_image:string;
+  image_background:string;
 }
 
 const useGenres = () => ({data:genres,isLoading:false , error:null})
